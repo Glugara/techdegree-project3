@@ -136,10 +136,9 @@ header h1 {
 }
 
 /* Media Queries */
-@@media (min-width: 768px) {
-  .contactinfo .flex-contact .newsletter .flex-news {
+@media (min-width: 768px) {
+  .contactinfo .flex-contact {
     flex-direction: row;
-    align-items: center;
   }
   .contactinfo input {
     flex-grow: 1;
