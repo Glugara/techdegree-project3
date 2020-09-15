@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  max-width: 768px;
+  font-family: "Roboto", sans-serif;
+}
+input {
+  border: 1px solid black;
+}
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    font-weight: 200;
+}
+header h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Intro Area */
+#topintro {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+#topintro h2, p {
+  text-align: center;
+}
+#topintro h2 {
+  padding-top: 20px;
+}
+#topintro p {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+#zip {
+  max-width: 50%;
+}
+
+/* Line Breaks */
+.firstline {
+  border: 3px solid black;
+  background-color: black;
+  margin-bottom: 3px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.secondline {
+  border: 2px solid black;
+  background-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+.thirdline {
+  border: 1px solid black;
+  background-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+/* Contact Information Area */
+.contactinfo {
+  padding: 50px 50px 35px 50px;
+  border: 0
+}
+.contactinfo .flex-contact {
+  display: flex;
+  flex-direction: column;
+}
+.contactinfo label {
+  margin-bottom: 10px;
+}
+.contactinfo input, select {
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+.contactinfo legend {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+/* Newsletter Area */
+.newsletter {
+  padding: 50px 50px 35px 50px;
+  border: 0
+}
+.newsletter .flex-news {
+  display: flex;
+  flex-direction: row;
+}
+.newsletter label {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.newsletter #comments{
+  background-color: lightgrey;
+  height: 200px;
+  width: 100%
+}
+.newsletter legend {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+/* Misc */
+#button {
+  text-align: center;
+  padding: 10px;
+  background-color: teal;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  margin: auto;
+  width: 100%;
+  justify-content: space-around;
+}
+.main-footer {
+  text-align: center;
+  padding: 25px;
+  font-style: italic;
+  color: darkgrey;
+}
+
+/* Media Queries */
+@@media (min-width: 768px) {
+  .contactinfo .flex-contact .newsletter .flex-news {
+    flex-direction: row;
+    align-items: center;
+  }
+  .contactinfo input {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+  .contactinfo label {
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+  }
+
+
+
+}
