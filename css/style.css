@@ -3,8 +3,11 @@
 }
 body {
   margin: 0 auto;
-  max-width: 768px;
   font-family: "Roboto", sans-serif;
+}
+main {
+  max-width: 768px;
+  margin: 0 auto;
 }
 input {
   border: 1px solid black;
@@ -76,7 +79,7 @@ header h1 {
   flex-direction: column;
 }
 .contactinfo label {
-  margin-bottom: 10px;
+  margin-top: 15px;
 }
 .contactinfo input, select {
   height: 50px;
